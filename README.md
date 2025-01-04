@@ -163,17 +163,12 @@ $$ \vec{F}_{gy} = mgsin(θ)_y $$
 $$ \vec{F}_{gz} = mgcos(θ)_xcos(θ)_y $$
 <p></p>
 
-$$
-\vec{F}_{\text{net},x} = \sum \vec{F}_x = \vec{F}_{gx} + \vec{F}_{\text{ext}} \cos(\phi_1) - \vec{f}_x = m a_x
-$$
+$$ \vec{F}{net,x} = \sum \vec{F}x = \vec{F}{gx} + \vec{F}{ext}cos(ϕ_1) - \vec{f}_x = ma_x $$
 
-$$
-\vec{F}_{\text{net},y} = \sum \vec{F}_y = \vec{F}_{gy} + \vec{F}_{\text{ext}} \cos(\phi_2) - \vec{f}_y = m a_y
-$$
+$$ \vec{F}{net,y} = \sum \vec{F}y = \vec{F}{gy} + \vec{F}{ext}cos(ϕ_2) - \vec{f}_y = ma_y $$
 
-$$
-\vec{F}_{\text{net},z} = \sum \vec{F}_z = \vec{F}_{gz} + \vec{F}_{\text{ext}} \cos(\phi_3) - \vec{N} = 0
-$$
+$$ \vec{F}{net,z} = \sum \vec{F}z = \vec{F}{gz} + \vec{F}{ext}cos(ϕ_3) - \vec{N} = 0 $$
+
 
 $$
 \vec{N} = \vec{F}_{gz} + \vec{F}_{\text{ext},z}
