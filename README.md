@@ -105,8 +105,11 @@ $\frac{d}{dx}[tan(x)] = sec^2(x)$
 ## Integrals / Integration
 
 $$\int_{a}^{b} f(x)dx = \lim_{n \to \infty} \sum_{i=1}^{n}f(x_{i}^*)Δx = \lim_{n \to \infty} \sum_{i=1}^{n}f(x_{i}^*)(\frac{b-a}{n})$$
+
 $$F(x) = \int_{a}^{b} f(x)dx$$
+
 $$F'(x) = \frac{d}{dx}\int_{a}^{b} f(x)dx = \frac{dF}{dx}(b) - \frac{dF}{dx}(a)$$
+
 $$\int_{a}^{b} f'(x)dx = f(b) - f(a)$$
 
 <p>U-substitution</p>
