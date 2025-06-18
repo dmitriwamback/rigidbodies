@@ -104,7 +104,7 @@ $\frac{d}{dx}[tan(x)] = sec^2(x)$
 
 ## Integrals / Integration
 
-$$\int_{a}^{b} f(x)dx = \lim_{n \to \infty} \sum_{i=1}^{n}f(x_{i}^*)Δx = \lim_{n \to \infty} \sum_{i=1}^{n}f(x_{i}^*)(\frac{b-a}{n})$$
+$$\int_{a}^{b} f(x)dx = \lim_{n \to \infty} \sum_{i=1}^{n}f(x_{i}^*)Δx$$
 
 $$F(x) = \int_{a}^{b} f(x)dx$$
 
