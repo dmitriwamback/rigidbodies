@@ -51,9 +51,25 @@ $$\frac{d}{dx}\frac{f(x)}{g(x)} = \frac{f'(x)g(x) - f(x)g'(x)}{g(x)^2}$$
 
 $$\frac{d}{dx}f(g(x)) = f'(g(x))g'(x)$$
 
+### Partial derivatives
 
-## Common derivatives
+$$f(x,y) = x^3  + y^2$$
+$$\frac{∂f(x,y)}{∂x} = \lim_{h \to 0} \frac{f(x+h, y) - f(x, y)}{h} = 3x^2 → \frac{∂f}{∂x}$$
+$$\frac{∂f(x,y)}{∂y} = \lim_{h \to 0} \frac{f(x, y+h) - f(x, y)}{h} = 2y → \frac{∂f}{∂y}$$
 
+<p>Product rule</p>
+
+$$u_x = \frac{∂}{∂x}(f(x,y)g(x,y))$$
+$$u_y = \frac{∂}{∂y}(f(x,y)g(x,y))$$
+$$u_x = \frac{∂f(x, y)}{∂x}g(x, y) + \frac{∂g(x, y)}{∂x}f(x, y)$$
+$$u_y = \frac{∂f(x, y)}{∂y}g(x, y) + \frac{∂g(x, y)}{∂y}f(x, y)$$
+
+<p>Quotient rule</p>
+
+$$u_x = \frac{\frac{∂f}{∂x}g(x,y) - \frac{∂g}{∂x}f(x,y)}{g(x, y)^2}$$
+$$u_y = \frac{\frac{∂f}{∂y}g(x,y) - \frac{∂g}{∂y}f(x,y)}{g(x, y)^2}$$
+
+### Common derivatives
 
 $\frac{d}{dx}[c] = 0$
 <p></p>
@@ -86,6 +102,38 @@ $\frac{d}{dx}[tan(x)] = sec^2(x)$
 | $v = \frac{dx}{dt}$| $ω = \frac{dθ}{dt}$
 | $a = \frac{dv}{dt}$ | $α = \frac{dω}{dt}$
 
+## Integrals / Integration
+
+$$F(x) = \int_{a}^{b} f(x)dx$$
+$$F'(x) = \frac{d}{dx}\int_{a}^{b} f(x)dx = \frac{dF}{dx}(b) - \frac{dF}{dx}(a)$$
+$$\int_{a}^{b} f'(x)dx = f(b) - f(a)$$
+
+### Common integrals
+
+$\int ax^bdx = \frac{ax^{b+1}}{b+1} + C$
+<p></p>
+
+$\int \frac{1}{x}dx = ln|x| + C$
+<p></p>
+
+$\int sin(x)dx = -cos(x) + C$
+<p></p>
+
+$\int cos(x)dx = sin(x) + C$
+<p></p>
+
+$\int sec^2(x)dx = tan(x) + C$
+<p></p>
+
+$\int sin^2(x)dx = \frac{x}{2} - \frac{sin(2x)}{4}+ C$
+<p></p>
+
+$\int cos^2(x)dx = \frac{x}{2} + \frac{sin(2x)}{4}+ C$
+
+## Mass of a rigid body
+$$m = \int_{Ω}ρ(x)dV, Ω \in \mathbb{R}^3$$
+$$m = \int\int \int_{Ω}  ρ(x)dxdydz$$
+$$m = \sum_{i} ρ_{i}V_{i}$$
 
 ## 2D Kinematics
 
@@ -141,47 +189,15 @@ $$m\vec{a} = Xcos(ϕ) - mgsin(θ) - μ_kmgcos(θ) - μ_kXsin(ϕ)$$
 $$\vec{a} = \frac{Xcos(ϕ)}{m} - gsin(θ) - μ_kgcos(θ) - \frac{μ_kXsin(ϕ)}{m}$$
 $$\vec{a} = \frac{Xcos(ϕ) - μ_kXsin(ϕ)}{m} - g(sin(θ) - μ_kcos(θ))$$
 
-### Inclined plane example at angle $θ$ with external force $F_{ext}$ at angle $ϕ$ in 3D
-Coordinate system:
-<p></p>
-
-$x$ is along the plane (downhill)
-<p></p>
-
-$y$ is perpendicular to $x$
-<p></p>
-
-$z$ is perpendicular to the plane (normal)
-<p></p>
-
-$$ \vec{F}_{gx} = mgsin(θ)_xcos(θ)_y $$
-<p></p>
-
-$$ \vec{F}_{gy} = mgsin(θ)_y $$
-<p></p>
-
-$$ \vec{F}_{gz} = mgcos(θ)_xcos(θ)_y $$
-<p></p>
-
-$$ \vec{F}{net,x} = \sum \vec{F}x = \vec{F}{gx} + \vec{F}{ext}cos(ϕ_1) - \vec{f}_x = ma_x $$
-
-$$ \vec{F}{net,y} = \sum \vec{F}y = \vec{F}{gy} + \vec{F}{ext}cos(ϕ_2) - \vec{f}_y = ma_y $$
-
-$$ \vec{F}{net,z} = \sum \vec{F}z = \vec{F}{gz} + \vec{F}{ext}cos(ϕ_3) - \vec{N} = 0 $$
-
-
-$$
-\vec{N} = \vec{F}_{gz} + \vec{F}_{\text{ext},z}
-$$
-
-$$ \vec{f}_x = μN, \vec{f}_y =μN $$
-<p></p>
-
-$$a_x = \frac{\vec{F}_{gx} + \vec{F}_{ext,x} -\vec{f}_x}{m}, a_y = \frac{\vec{F}_{gy} + \vec{F}_{ext,y} -\vec{f}_y}{m}$$
-
 ## Torque and inertia
 
-$τ_{net} = \sum τ_n =  Iα$
+$τ_{net} = \sum τ_n = Iα$
+
+$τ = rFsin(ϕ)$
+
+### Inertia of a rod where $L$ is the length of the rod, $M$ is the mass of the rod and $h$ is the pivot of the rod
+$$ I = \int_{-h}^{L-h} x^{2}dm → \int_{-h}^{L-h} x^{2}λdx → λ\int_{-h}^{L-h} x^{2}dx → \frac{M}{L}\int_{-h}^{L-h} x^{2}dx → \frac{Mx^{3}}{3L}_{-h}^{L-h} → \frac{M(L-h)^3}{3L} + \frac{Mh}{3L} $$
+$$ I = \frac{M(L-h)^3}{3L} + \frac{Mh}{3L} $$
 
 ## Energy
 
@@ -190,7 +206,14 @@ $τ_{net} = \sum τ_n =  Iα$
 $U_g = mgh$
 <p></p>
 
-$U_s = \int F_s dx = \int -kx dx = \frac{1}{2}kx^2 + C = \frac{1}{2}kx^2$
+$U_s = \frac{1}{2}kx^2$
 <p></p>
 
 $K = \frac{1}{2}mv^2$
+<p></p>
+
+$$K = \int pdv → \int mvdv → \frac{1}{2}mv^2$$
+$$K = \int \vec{F}d\vec{x} → \int F(x)dx → max → \frac{1}{2}mv^2$$
+$$U_{g} = -\int mgdy → -mgy$$
+$$U_{s} = \int F_{s}dx → -\int kxdx → -\frac{1}{2}kx^2$$
+$$W = \int Fdx → \int \frac{dE}{dx}dx → dE → ΔE$$
