@@ -104,11 +104,32 @@ $\frac{d}{dx}[tan(x)] = sec^2(x)$
 
 ## Integrals / Integration
 
+$$\int_{a}^{b} f(x)dx$$
 $$F(x) = \int_{a}^{b} f(x)dx$$
 $$F'(x) = \frac{d}{dx}\int_{a}^{b} f(x)dx = \frac{dF}{dx}(b) - \frac{dF}{dx}(a)$$
 $$\int_{a}^{b} f'(x)dx = f(b) - f(a)$$
 
+<p>U-substitution</p>
+
+$$\int tan(x)dx → \int \frac{sin(x)}{cos(x)}dx$$
+$$u = cos(x) → \frac{du}{dx} = -sin(x) → dx = -\frac{du}{sin(x)}$$
+$$-\int \frac{sin(x)}{cos(x)}\frac{du}{sin(x)} → -\int \frac{1}{cos(x)}du → -\int \frac{1}{u}du → -ln|u| = ln|\frac{1}{u}| = ln|\frac{1}{cos(x)}| = ln|sec(x)|+ C$$
+
+<p>Integration by parts</p>
+
+$$\int xcos(x)dx → \int udv → uv - \int vdu$$
+$$u = x → du = dx$$
+$$v = \int cos(x)dx → v = sin(x)$$
+$$\int xcos(x)dx = uv - \int vdu →xsin(x) - \int sin(x)dx →xsin(x) + cos(x) + C$$
+
+<p>Trigonometric substitution</p>
+
+$$\int \frac{dx}{x^2 + 1}$$
+$$x = tan(θ) → θ = tan^{-1}(x)$$
+$$\frac{dx}{dθ} = sec^2(θ) → dx = sec^2(θ)dθ$$
+$$\int \frac{dx}{tan^2(θ) + 1} → \int \frac{sec^2(θ)dθ}{tan^2(θ) + 1} → \int \frac{sec^2(θ)dθ}{sec^2(θ)} → \int dθ → θ → tan^{-1}(x) + C = arctan(x) + C$$
 ### Common integrals
+
 
 $\int ax^bdx = \frac{ax^{b+1}}{b+1} + C$
 <p></p>
